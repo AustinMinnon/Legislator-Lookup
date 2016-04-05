@@ -1,0 +1,13 @@
+{{yield}}
+<h1>Search Committees by: House or Senate</h1>
+<form>
+  <div class="form-group">
+    <label for="committee">Search a committe by:</label>
+    {{#x-select value=committee}}
+      {{#x-option value=""}}Select{{/x-option}}
+      {{#x-option value="senate"}}Senate{{/x-option}}
+      {{#x-option value="house"}}House{{/x-option}}
+    {{/x-select}}
+  </div>
+  <button class="btn btn-success"{{action 'committeeLookup'}}>Submit</button>
+</form>

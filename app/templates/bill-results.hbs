@@ -6,11 +6,11 @@
     <li>Introduced on: {{bill.introduced_on}}</li>
     <li>{{bill.official_title}}</li>
     <h5>Sponsored by:</h5>
-    <li>{{bill.sponsor.last_name}}", "{{bill.sponsor.first_name}}</li>
+    <li>{{bill.sponsor.last_name}}, {{bill.sponsor.first_name}}</li>
     <h5>Committee Ids:</h5>
     <li>{{bill.committee_ids}}</li>
     <h5>Learn More:</h5>
-    <li>{{bill.urls.congress}}</li>
+    <li><a href={{bill.urls.congress}}>{{bill.urls.congress}}</a></li>
     <hr>
   {{/each}}
 </ul>
