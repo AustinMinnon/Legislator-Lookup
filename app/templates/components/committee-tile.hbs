@@ -1,0 +1,7 @@
+<h5>Chamber: {{committee.chamber}}</h5>
+<h5>Commitee Name: {{committee.name}}</h5>
+{{#link-to 'sub-Committee' committee.committee_id}}sub-committees{{/link-to}}
+<p>Parent committee ID: {{committee.parent_committee_id}} </p>
+<p>Sub Commitee? {{committee.subcommittee}}</p>
+{{log committee.subcommittee}}
+<hr>

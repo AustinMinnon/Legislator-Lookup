@@ -1,10 +1,5 @@
 {{outlet}}
 <h1>Committees</h1>
 {{#each model as |committee|}}
- <h5>Chamber: {{committee.chamber}}</h5>
- <h5>Commitee Name: {{committee.name}}</h5>
- <p>Commitee ID: {{committee.committee_id}}</p>
- <p>Parent committee ID: {{committee.parent_committee_id}} </p>
- <p>Sub Commitee? {{committee.subcommittee}}</p>
- <hr>
+   {{committee-tile committee=committee}}
 {{/each}}

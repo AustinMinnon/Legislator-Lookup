@@ -8,5 +8,15 @@ export default Ember.Route.extend({
     return Ember.$.getJSON(url).then(function(responseJSON){
       return responseJSON.results;
     });
+  },
+
+  actions: {
+    subCommitteeLookup() {
+      console.log("hey");
+      // var params = {
+      //   parentCommitee: committee.committee_id;
+      //
+      // }
+    }
   }
 });
