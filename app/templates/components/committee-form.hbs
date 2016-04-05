@@ -10,5 +10,13 @@
       {{#x-option value="joint"}}Joint{{/x-option}}
     {{/x-select}}
   </div>
+  <div class="form-group">
+    <label for="subCommittee">Has sub-committees?</label>
+    {{#x-select value=subCommittee}}
+      {{#x-option value=""}}Select{{/x-option}}
+      {{#x-option value="true"}}True{{/x-option}}
+      {{#x-option value="false"}}False{{/x-option}}
+    {{/x-select}}
+  </div>
   <button class="btn btn-success"{{action 'committeeLookup'}}>Submit</button>
 </form>
