@@ -1,0 +1,10 @@
+{{yield}}
+<h1>Search for recent bills affecting your area</h1>
+
+<form>
+  <div class="form-group">
+    <label for="bill">Search a bill keyword</label>
+    {{input value=bill id="bill"}}
+  </div>
+  <button class="btn btn-primary" {{action 'billLookup'}}>Submit</button>
+</form>

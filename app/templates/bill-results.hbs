@@ -1,0 +1,16 @@
+<ul>
+  {{#each model as |bill|}}
+  <h2>Bill information</h2>
+    <li>Short title: {{bill.short_title}}</li>
+    <h3>Description:</h3>
+    <li>Introduced on: {{bill.introduced_on}}</li>
+    <li>{{bill.official_title}}</li>
+    <h5>Sponsored by:</h5>
+    <li>{{bill.sponsor.last_name}}", "{{bill.sponsor.first_name}}</li>
+    <h5>Committee Ids:</h5>
+    <li>{{bill.committee_ids}}</li>
+    <h5>Learn More:</h5>
+    <li>{{bill.urls.congress}}</li>
+    <hr>
+  {{/each}}
+</ul>
