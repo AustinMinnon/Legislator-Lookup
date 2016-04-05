@@ -1,5 +1,10 @@
 {{outlet}}
-<h1>Committees in House</h1>
+<h1>Committees</h1>
 {{#each model as |committee|}}
-{{committee.chamber}}
+ <h5>Chamber: {{committee.chamber}}</h5>
+ <h5>Commitee Name: {{committee.name}}</h5>
+ <p>Commitee ID: {{committee.committee_id}}</p>
+ <p>Parent committee ID: {{committee.parent_committee_id}} </p>
+ <p>Sub Commite? {{committee.subcommittee}}</p>
+ <hr>
 {{/each}}
